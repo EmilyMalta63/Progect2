@@ -1,0 +1,6 @@
+<!-- resources.html -->
+<ul>
+    <li th:each="resource : ${resources}">
+        <a th:href="@{/resources/{id}(id=${resource.id})}" th:text="${resource.title}"></a>
+    </li>
+</ul>

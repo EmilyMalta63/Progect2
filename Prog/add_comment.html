@@ -1,0 +1,4 @@
+<form th:action="@{/resources/{id}/comments(id=${resource.id})}" method="post">
+    <textarea id="text" name="text" required></textarea>
+    <button type="submit">Add Comment</button>
+</form>
